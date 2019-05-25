@@ -7,7 +7,6 @@ export default class MainPage extends React.Component {
         super();
         this.state = {
             date: new Date().toISOString().split("T")[0],
-            isOnline: navigator.onLine
         }
     }
     
@@ -35,7 +34,6 @@ export default class MainPage extends React.Component {
     }
 
     render() {
-        console.log(this.state.isOnline);
         return(
             <div className='dashboard-container'>
                 <div className='header'>
